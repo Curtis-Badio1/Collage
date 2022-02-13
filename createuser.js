@@ -1,10 +1,11 @@
-firebase.auth().signInWithEmailAndPassword(email, psw)
+firebase.auth().createUserWithEmailAndPassword(email, psw)
   .then((userCredential) => {
-    // Signed in
+    // Signed in 
     var user = userCredential.user;
     // ...
   })
   .catch((error) => {
     var errorCode = error.code;
     var errorMessage = error.message;
+    // ..
   });
