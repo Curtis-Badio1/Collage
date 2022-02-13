@@ -1,4 +1,4 @@
-firebase.auth().createUserWithEmailAndPassword(email, psw)
+firebase.auth().createUserWithEmailAndPassword(email, passorw)
   .then((userCredential) => {
     // Signed in 
     var user = userCredential.user;
